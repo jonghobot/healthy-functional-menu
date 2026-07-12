@@ -4,10 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f5f8f8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta name="description" content="골반, 햄스트링, 고관절과 전신 기능을 위한 저강도 움직임 22가지">
   <title>저강도 기능 움직임</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <style>
+    /* Critical fallback: keeps the catalogue usable if an Android browser delays the external CSS. */
+    html{font-family:system-ui,sans-serif}body{margin:0;background:#f5f8f8;color:#172b3a}
+    .topbar{display:flex;align-items:center;gap:12px;padding:13px 18px}.topbar>span{flex:1}
+    main{padding:0 16px}.filters{display:flex;gap:8px;overflow-x:auto}.filter{white-space:nowrap}
+    .catalogue{display:grid;gap:12px}.movement{padding:18px;border-radius:22px;background:#fff}
+    .movement__image img{max-width:100%;height:auto}.movement[hidden]{display:none}
+  </style>
+  <link rel="stylesheet" href="mobile-v2.css">
+  <script src="mobile-v2.js" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -50,4 +59,3 @@
   <footer><span>Personal movement catalogue</span><a href="https://github.com/jonghobot/healthy-functional-menu">GitHub</a></footer>
 </body>
 </html>
-
