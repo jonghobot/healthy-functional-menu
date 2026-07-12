@@ -2,49 +2,49 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8f8">
   <meta name="description" content="골반, 햄스트링, 고관절과 전신 기능을 위한 저강도 움직임 22가지">
-  <title>저강도 기능 움직임 메뉴판</title>
+  <title>저강도 기능 움직임</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__copy">
-      <p class="eyebrow">FUNCTIONAL MOVEMENT MENU</p>
-      <h1>저강도 기능 움직임</h1>
-      <p class="lead">근력과 심폐 훈련 사이에서 놓치기 쉬운 골반 조절, 가동성, 균형과 회전 저항을 위한 개인용 메뉴판입니다.</p>
-      <div class="actions">
-        <a class="button button--primary" href="functional-movement-menu.pdf">PDF 열기</a>
-        <a class="button" href="#menu">웹에서 보기</a>
-      </div>
-    </div>
-    <div class="hero__note">
-      <span>22 movements</span>
-      <strong>편안한 범위에서<br>천천히, 꾸준히</strong>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="처음으로">FM</a>
+    <span>기능 움직임</span>
+    <a class="pdf-link" href="functional-movement-menu.pdf">PDF</a>
   </header>
 
-  <main id="menu">
-    <section class="intro">
-      <div><span>01</span><strong>골반 · 장좌 · 고관절</strong><p>골반을 세우는 감각부터 햄스트링과 고관절 움직임까지</p></div>
-      <div><span>02</span><strong>전신 기능</strong><p>척추, 발목, 균형, 견갑, 회전 저항과 힘줄 적응</p></div>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">PERSONAL MOVEMENT CATALOGUE</p>
+      <h1>오늘 필요한 움직임을<br>가볍게 골라보세요.</h1>
+      <p>골반 조절과 장좌 준비부터 발목, 균형, 견갑과 회전 저항까지. 기록 없이 하나씩 골라 수행하는 22가지 저강도 동작입니다.</p>
+      <div class="summary" aria-label="메뉴 요약">
+        <span><strong>22</strong> movements</span>
+        <span><strong>2</strong> categories</span>
+        <span><strong>5-15</strong> min</span>
+      </div>
     </section>
 
-    <section class="pages" aria-label="운동 메뉴판">
-      <article class="sheet">
-        <div class="sheet__head"><span>PAGE 01</span><h2>골반과 고관절</h2></div>
-        <a href="functional-movement-menu.pdf" aria-label="PDF 첫 페이지 열기"><img src="assets/menu-page-1.png" alt="골반, 장좌, 햄스트링과 고관절 동작 11개"></a>
-      </article>
-      <article class="sheet">
-        <div class="sheet__head"><span>PAGE 02</span><h2>전신 기능</h2></div>
-        <a href="functional-movement-menu.pdf" aria-label="PDF 두 번째 페이지 열기"><img src="assets/menu-page-2.png" alt="척추, 발목, 균형, 견갑과 회전 저항 동작 11개"></a>
-      </article>
-    </section>
+    <nav class="filters" aria-label="동작 분류">
+      <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">전체 22</button>
+      <button class="filter" type="button" data-filter="pelvis" aria-pressed="false">골반·고관절 11</button>
+      <button class="filter" type="button" data-filter="whole" aria-pressed="false">전신 기능 11</button>
+    </nav>
+
+    <section class="catalogue" id="catalogue" aria-live="polite"></section>
 
     <aside class="safety">
-      <strong>사용 원칙</strong>
-      <p>편안한 당김까지만 수행합니다. 날카로운 통증, 저림 또는 힘 빠짐이 생기면 중단하세요. 이 메뉴판은 진단이나 개인 재활 처방을 대신하지 않습니다.</p>
+      <span class="safety__icon">!</span>
+      <div><strong>편안한 당김까지만</strong><p>날카로운 통증, 저림 또는 힘 빠짐이 생기면 중단하세요. 특정 골반 방향을 억지로 교정하지 않습니다.</p></div>
     </aside>
+
+    <section class="download">
+      <div><p class="eyebrow">PRINT VERSION</p><h2>종이 메뉴판이 필요하다면</h2><p>A4 가로 2페이지 PDF로 출력할 수 있습니다.</p></div>
+      <a href="functional-movement-menu.pdf">PDF 열기 <span>↗</span></a>
+    </section>
   </main>
 
   <footer><span>Personal movement catalogue</span><a href="https://github.com/jonghobot/healthy-functional-menu">GitHub</a></footer>
