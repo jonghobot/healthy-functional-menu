@@ -1,0 +1,8 @@
+tmp/
+.DS_Store
+__pycache__/
+*.pyc
+assets/functional_menu/icons/
+make_exercise_menu.py
+make_functional_menu.py
+output/pdf/personal_exercise_menu.pdf
