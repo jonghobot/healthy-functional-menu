@@ -25,6 +25,21 @@ Python과 `reportlab`, `Pillow`가 필요합니다.
 python3 make_functional_menu_v2.py
 ```
 
+## 매일 Telegram 루틴
+
+`.github/workflows/daily-telegram-routine.yml`이 매일 한국 시각 낮 12시에 실행됩니다. 날짜를 기준으로 다섯 영역에서 한 동작씩 골라 약 10분 분량의 루틴을 만들고, 동작 그림과 권장량을 Telegram 앨범으로 전송합니다.
+
+저장소 Actions Secrets에는 다음 값이 필요합니다.
+
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
+
+로컬에서 조합만 확인하려면 다음을 실행합니다.
+
+```bash
+python3 scripts/send_daily_routine.py --dry-run
+```
+
 ## 참고 원칙
 
 동작 구성과 안전 문구는 다음 자료의 보수적인 원칙을 참고했습니다.
@@ -37,4 +52,3 @@ python3 make_functional_menu_v2.py
 
 - 글꼴: [Pretendard](https://github.com/orioncactus/pretendard), SIL Open Font License 1.1
 - 동작 이미지는 이 프로젝트를 위해 생성한 임상 안내도 스타일의 일러스트입니다.
-
