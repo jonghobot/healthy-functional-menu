@@ -15,8 +15,8 @@
     .catalogue{display:grid;gap:12px}.movement{padding:18px;border-radius:22px;background:#fff}
     .movement__image img{max-width:100%;height:auto}.movement[hidden]{display:none}
   </style>
-  <link rel="stylesheet" href="mobile-v2.css">
-  <script src="mobile-v2.js" defer></script>
+  <link rel="stylesheet" href="mobile-v3.css">
+  <script src="mobile-v3.js" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -29,18 +29,22 @@
     <section class="hero">
       <p class="eyebrow">PERSONAL MOVEMENT CATALOGUE</p>
       <h1>오늘 필요한 움직임을<br>가볍게 골라보세요.</h1>
-      <p>골반 조절과 장좌 준비부터 발목, 균형, 견갑과 회전 저항까지. 기록 없이 하나씩 골라 수행하는 22가지 저강도 동작입니다.</p>
+      <p>골반과 척추부터 발목, 균형, 어깨와 손목까지. 기록 없이 하나씩 골라 수행하는 66가지 저강도 동작입니다.</p>
       <div class="summary" aria-label="메뉴 요약">
-        <span><strong>22</strong> movements</span>
-        <span><strong>2</strong> categories</span>
+        <span><strong>66</strong> movements</span>
+        <span><strong>6</strong> categories</span>
         <span><strong>5-15</strong> min</span>
       </div>
     </section>
 
     <nav class="filters" aria-label="동작 분류">
-      <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">전체 22</button>
+      <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">전체 66</button>
       <button class="filter" type="button" data-filter="pelvis" aria-pressed="false">골반·고관절 11</button>
       <button class="filter" type="button" data-filter="whole" aria-pressed="false">전신 기능 11</button>
+      <button class="filter" type="button" data-filter="spine" aria-pressed="false">호흡·척추 11</button>
+      <button class="filter" type="button" data-filter="hipknee" aria-pressed="false">고관절·무릎 11</button>
+      <button class="filter" type="button" data-filter="foot" aria-pressed="false">발·균형 11</button>
+      <button class="filter" type="button" data-filter="upper" aria-pressed="false">어깨·목·손목 11</button>
     </nav>
 
     <section class="catalogue" id="catalogue" aria-live="polite"></section>
